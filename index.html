@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <title>firebase-auth</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="has-text-centered is-size-1" id="label">Hello There!</h1>
+    <div class="field">
+      <label class="label">Email</label>
+      <div class="control">
+        <input class="input" id="email" type="text" placeholder="Text input">
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Password</label>
+      <div class="control">
+        <input class="input" id="password" type="password" placeholder="password">
+        <h7 id="error" class="has-text-danger is-size-7"></h7>
+      </div>
+    </div>
+    <span class="control">
+      <button class="button is-primary" onclick="handleSignIn()">Sign In</button>
+    </span>
+    <span class="control">
+      <button class="button is-warning" onclick="handleSignUp()">Sign Up</button>
+    </span>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-auth.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
